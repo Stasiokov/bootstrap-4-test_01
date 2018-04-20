@@ -1,0 +1,87 @@
+$bgc-main:#7a706f;
+$bgc-blue:#8fd7d4;
+
+.bgc-main{
+  background-color: $bgc-main;
+}
+body{
+  background: #b24506;
+  background: -moz-linear-gradient(top, #b24506 20%, #b24506 20%, #fa9d90 100%);
+  background: -webkit-linear-gradient(top, #b24506 20%,#b24506 20%,#fa9d90 100%);
+  background: linear-gradient(to bottom, #b24506 20%,#b24506 20%,#fa9d90 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24506', endColorstr='#fa9d90',GradientType=0 );
+}
+.heading {
+
+  button{
+    min-width: 42px;
+  }
+  &__sub {
+    height: 160px;
+    background-color: $bgc-blue;
+    .user-name {
+      height: inherit;
+      img {
+        object-fit: cover;
+        height: 80px;
+        width: 80px;
+        border: 3px solid white;
+      }
+    }
+    .badge{
+      position: relative;
+      top: -10px;
+    }
+  }
+}
+.shadow-left{
+  box-shadow: -5px 1px 10px 0px rgba(0,0,0,0.75);;
+}
+.list-group-item-action:hover{
+  color: #495057;
+  text-decoration: none;
+  background-color: #6a605f;
+}
+.list-group-item.active{
+  z-index: 2;
+  color: #fff;
+  background-color: $bgc-blue;
+  border-color: $bgc-blue;
+}
+.z-index-h{
+  z-index: 100;
+}
+.title{
+  min-height: 130px;
+}
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: red;
+  position: relative;
+  i{
+    margin-top: 10px;
+  }
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid red;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid red;
+}
